@@ -1,10 +1,12 @@
-import { Home } from "@/components/home/home";
+"use server";
 
+import { Home } from "@/components/home";
 
-export default function App() {
-  return (
-    <div>
-        <Home />
-    </div>
-  );
+export default async function App() {
+	return (
+		<div>
+			<title>bonfire</title>
+			<Home />
+		</div>
+	);
 }
