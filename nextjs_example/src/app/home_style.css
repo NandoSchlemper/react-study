@@ -1,0 +1,52 @@
+.start-adventure-button {
+    background: var(--bg-background);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.start-adventure-button:active {
+    transform: 0.9;
+}
+
+.basic-introduction-home {
+    text-align: center;
+    letter-spacing: 2;
+    font-weight: bold;
+}
+
+.adventure-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+}
+
+.adventure-container:hover .home-bonfire-gif {
+    opacity: 0.3;
+}
+
+.adventure-container:hover .start-adventure-div {
+    opacity: 1;
+}
+
+.home-bonfire-gif {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    width: 400px;
+    height: 400px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.start-adventure-div {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
