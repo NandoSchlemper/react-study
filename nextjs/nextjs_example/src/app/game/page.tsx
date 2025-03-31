@@ -1,6 +1,8 @@
 "use client"
+import { GameMap } from "@/components/game/map/gamemap"
+
 export default function App() {
     return (
-        <h1>This is the gamas</h1>
+        <GameMap />
     )
 }
